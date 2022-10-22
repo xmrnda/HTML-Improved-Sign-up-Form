@@ -23,14 +23,17 @@
             <!-- TODO: Make fieldset and legend -->
             <fieldset>
                 <legend>Your Contact Info</legend>
+                <!-- Todo: Email Input -->
                 <div>
                     <label for="email">Your Email</label>
                     <input type="text" id="email" name="email">
                 </div>
+                <!-- Todo: Street Address Input -->
                 <div>
                     <label for="address">Your Street Address</label>
                     <input type="text" id="address" name="address">
                 </div>
+                <!-- Todo: City, State, and Zip Inputs -->
                 <div>
                     <label for="city">Your City</label>
                     <input type="text" id="city" name="city">
@@ -96,16 +99,87 @@
                 
 
             </fieldset>
-            <!-- Todo: Email Input -->
-            <!-- Todo: Street Address Input -->
-            <!-- Todo: City, State, and Zip Inputs -->
 
             <!-- TODO: Second fieldset -->
             <!-- TODO: Radio buttons for selecting preferred destination -->
-            <!-- TODO: Color input for selecting favorite color -->
-            <!-- TODO: Checkboxes for selecting extra add-ons -->
-            
-            <!-- TODO: Submit Button -->
+            <fieldset>
+                <legend>Your Preferences</legend>
+                <h3>Choose your location</h3>
+                <div>
+                    <input type="radio" id="aruba" name="location" value="Aruba" checked> 
+                    <label for="aruba">Aruba</label>
+                </div>
+                <div>
+                    <input type="radio" id="japan" name="location" value="Japan"> 
+                    <label for="japan">Japan</label>
+                </div>
+                <div>
+                    <input type="radio" id="reykjavik" name="location" value="Reykjavik"> 
+                    <label for="reykjavik">Reykjavik</label>
+                </div>
+                <div>
+                    <input type="radio" id="new-zealand" name="location" value="New Zealand"> 
+                    <label for="new-zealand">New Zealand</label>
+                </div>
+
+                <hr>
+
+                <!-- TODO: Color input for selecting favorite color -->
+                <div>
+                    <label for="color">Favorite Color</label>
+                    <input type="color" id="color" name="color">
+                </div>
+
+                <hr>
+
+                <h3>Please select any extras you'd like:</h3>
+
+                <!-- TODO: Checkboxes for selecting extra add-ons -->
+                <div>
+                    Sauna Access:
+                    <input type="checkbox"
+                        id="sauna"
+                        value="sauna access"
+                        name="extras"
+                        >
+                    
+                </div>
+                <div>In-Room Hot Tub:
+                    <input type="checkbox"
+                        id="hottub"
+                        value="Hot Tub"
+                        name="extras"
+                        >
+                    
+                </div>
+                <div>
+                    Ocean View:
+                    <input type="checkbox"
+                        id="ocean"
+                        value="Ocean View"
+                        name="extras"
+                        >
+                    
+                </div>
+                <div>
+                    Drinks Package:
+                    <input type="checkbox"
+                        id="drinks"
+                        value="Drinks Package"
+                        name="extras"
+                        >
+                    
+                </div>
+
+                <hr>
+
+                <!-- TODO: Submit Button -->
+                <div>
+                    <input type="submit" value="Enter the Contest!">
+                </div>
+
+            </fieldset>
+
         </form>
     </main>
     <footer>
