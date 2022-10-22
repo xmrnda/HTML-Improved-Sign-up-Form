@@ -15,10 +15,18 @@
         <form method="GET" action="results.html"> <!-- TODO: Set Action and Method Properties -->
             <div>
                 <label for="firstname">Your First Name</label>
-                <input type="text" id="firstname" name="firstname">
+                <span class="required-field">*</span>
+                <input type="text" id="firstname" name="firstname" minlength="2" maxlength="35" required>
+
                 <!-- TODO: Create a "lastname" input with type "text" -->
                 <label for="lastname">Your Last Name</label>
-                <input type="text" id="lastname" name="lastname">
+                <span class="required-field">*</span>
+                <input type="text" id="lastname" name="lastname" minlength="2" maxlength="35" required>
+                
+            </div>
+            <div>
+                <label for="age">Your Age</label>
+                <input type="number" name="age" id="age" min="21" max="120">
             </div>
             <!-- TODO: Make fieldset and legend -->
             <fieldset>
@@ -26,7 +34,8 @@
                 <!-- Todo: Email Input -->
                 <div>
                     <label for="email">Your Email</label>
-                    <input type="text" id="email" name="email">
+                    <span class="required-field">*</span>
+                    <input type="text" id="email" name="email" required>
                 </div>
                 <!-- Todo: Street Address Input -->
                 <div>
@@ -122,6 +131,7 @@
                     <label for="new-zealand">New Zealand</label>
                 </div>
 
+                <br>
                 <hr>
 
                 <!-- TODO: Color input for selecting favorite color -->
@@ -171,7 +181,7 @@
                     
                 </div>
 
-                <hr>
+                <br>
 
                 <!-- TODO: Submit Button -->
                 <div>
